@@ -166,7 +166,7 @@ header {
   color: #52606d;
 }
 
-/* features secatin*/
+/* features section */
 .features {
   width: 90%;
   max-width: 1100px;
@@ -179,29 +179,42 @@ header {
   margin-bottom: 50px;
 }
 
+.features-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2EAD70;
+  background: #E7F7EE;
+  border: 1px solid #CBEFDB;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
 .features-title {
   font-size: 36px;
   font-weight: 800;
   color: #12372A;
-  margin-bottom: 12px;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 .features-subtitle {
   font-size: 16px;
   color: #52606D;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
 }
 
 .feature-card {
   background: white;
   border-radius: 16px;
-  padding: 24px 16px;
+  padding: 24px;
   box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
   border: 1px solid #E8F5ED;
   transition: all 0.3s ease;
@@ -209,7 +222,7 @@ header {
 }
 
 .feature-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(18, 55, 42, 0.1);
   border-color: #CBEFDB;
 }
@@ -225,12 +238,6 @@ header {
   margin: 0 auto 16px;
   color: #2EAD70;
   font-size: 20px;
-  transition: all 0.3s ease;
-}
-
-.feature-card:hover .feature-icon {
-  background: #2EAD70;
-  color: white;
 }
 
 .feature-title {
