@@ -1,0 +1,411 @@
+/* reset all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ececec;
+  color: #1f2933;
+  /* Jarak Antar Baris */
+  line-height: 1.6;
+}
+
+header {
+  width: 90%;
+  max-width: 1100px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
+  margin: 20px auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+.nav-logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1f2933;
+  text-decoration: none;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-item {
+  color: #1f2933;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+.nav-item:hover,
+.nav-item.active {
+  color: #2ead70;
+  transition: color 0.2s ease;
+}
+.nav-button {
+  display: flex;
+  align-items: center;
+}
+.btn-unduh {
+  border: flex;
+  padding: 13px 24px;
+  border-radius: 25px;
+  background-color: #39bd7d;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
+}
+
+.btn-unduh:hover {
+  background-color: #248c5a;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.hero {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.text-hero {
+  flex: 1;
+  min-width: 0;
+}
+
+.gambar-hero {
+  flex-shrink: 0;
+}
+
+.gambar {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.badge-hero {
+  padding: 8px 16px;
+  color: #44b980;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #e1eae6;
+  border-radius: 30px;
+  border: 1px solid #afddc7;
+}
+.hero-judul {
+  font-weight: 800;
+  margin-top: 22px;
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+.hero-description {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #52606d;
+}
+.button-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+.btn-ios {
+  border: flex;
+  padding: 13px 24px;
+  border-radius: 25px;
+  background-color: #39bd7d;
+  border: 2px solid #329f6a;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
+}
+.btn-android {
+  border: flex;
+  padding: 13px 24px;
+  border-radius: 25px;
+  background-color: white;
+  border: 2px solid #39bd7d;
+  color: #39bd7d;
+  font-weight: 700;
+  font-size: 14px;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-ios:hover {
+  background-color: #248c5a;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+.btn-android:hover {
+  color: white;
+  background-color: #248c5a;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+.tagline-hero {
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #52606d;
+}
+
+/* features secatin*/
+.features {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0 80px;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #12372A;
+  margin-bottom: 12px;
+}
+
+.features-subtitle {
+  font-size: 16px;
+  color: #52606D;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px 16px;
+  box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
+  border: 1px solid #E8F5ED;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(18, 55, 42, 0.1);
+  border-color: #CBEFDB;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #E7F7EE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: #2EAD70;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: #2EAD70;
+  color: white;
+}
+
+.feature-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #12372A;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.feature-desc {
+  font-size: 13px;
+  color: #52606D;
+  line-height: 1.6;
+}
+
+.fitur{
+  padding: 8px 16px;
+  color: #44b980;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #e1eae6;
+  border-radius: 30px;
+  border: 1px solid #afddc7;
+}
+
+/* solution section */
+.solution {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.solution-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px;
+  align-items: start;
+}
+
+/* Left Column */
+.solution-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2EAD70;
+  background: #E7F7EE;
+  border: 1px solid #CBEFDB;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.solution-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #12372A;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.solution-desc {
+  font-size: 16px;
+  color: #52606D;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.solution-benefits {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.solution-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: #1F2933;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.solution-benefits i {
+  color: #2EAD70;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.solution-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background: #2EAD70;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(46, 173, 111, 0.3);
+}
+
+.solution-btn:hover {
+  background: #248c5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46, 173, 111, 0.4);
+}
+
+/* Right Column */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
+  border: 1px solid #E8F5ED;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(18, 55, 42, 0.1);
+  border-color: #CBEFDB;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #E7F7EE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2EAD70;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8A9BA8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #12372A;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.stat-desc {
+  font-size: 13px;
+  color: #2EAD70;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* !-- NOTE!! */
+ /* Saya mengerjakan semuanya tidak sendiri tapi dengan menanyakan fungsi suatu seperti "bagaimana cara melebihkan dan mengecilkan border dan panjang radius tersebut" --> */
