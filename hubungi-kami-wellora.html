@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Wellora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --mint-50: #f0fdf4;
+            --mint-100: #dcfce7;
+            --mint-200: #bbf7d0;
+            --green-500: #22c55e;
+            --green-600: #16a34a;
+            --green-700: #15803d;
+            --green-800: #166534;
+            --green-900: #14532d;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --white: #ffffff;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --transition: all 0.2s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--mint-50);
+            color: var(--green-900);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        /* Header Section */
+        .contact-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .header-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--mint-100);
+            border-radius: 100px;
+            color: var(--green-700);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .header-badge svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .contact-header h1 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--green-900);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .contact-header p {
+            font-size: clamp(16px, 2.5vw, 18px);
+            color: var(--green-700);
+            max-width: 640px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Main Grid Layout */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+
+        /* Contact Cards Column */
+        .contact-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            padding: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            transition: var(--transition);
+            border: 1px solid var(--mint-200);
+        }
+
+        .contact-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .card-icon-wrapper {
+            width: 48px;
+            height: 48px;
+            background: var(--mint-100);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .card-icon-wrapper svg {
+            width: 24px;
+            height: 24px;
+            color: var(--green-600);
+        }
+
+        .card-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .card-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+
+        .card-value {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--green-800);
+            line-height: 1.5;
+            word-break: break-word;
+        }
+
+        .card-value a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .card-value a:hover {
+            color: var(--green-600);
+            text-decoration: underline;
+        }
+
+        /* Forum Card Column */
+        .forum-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            padding: 40px;
+            border: 1px solid var(--mint-200);
+            display: flex;
+            flex-direction: column;
+            min-height: 480px;
+        }
+
+        .forum-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--mint-200);
+        }
+
+        .forum-icon-wrapper {
+            width: 56px;
+            height: 56px;
+            background: var(--mint-100);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .forum-icon-wrapper svg {
+            width: 28px;
+            height: 28px;
+            color: var(--green-600);
+        }
+
+        .forum-title-block h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--green-900);
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+
+        .forum-title-block p {
+            font-size: 15px;
+            color: var(--green-600);
+            font-weight: 500;
+        }
+
+        .forum-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .forum-placeholder-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--mint-100);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .forum-placeholder-icon svg {
+            width: 40px;
+            height: 40px;
+            color: var(--green-400);
+        }
+
+        .forum-body h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--green-800);
+            margin-bottom: 12px;
+        }
+
+        .forum-body > p {
+            font-size: 16px;
+            color: var(--green-600);
+            max-width: 360px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .forum-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 8px;
+        }
+
+        .feature-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: var(--mint-50);
+            border: 1px solid var(--mint-200);
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--green-700);
+        }
+
+        .feature-tag svg {
+            width: 16px;
+            height: 16px;
+            color: var(--green-500);
+        }
+
+        .coming-soon-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, var(--mint-100), var(--mint-200));
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--green-700);
+            margin-top: 16px;
+        }
+
+        .coming-soon-badge::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: var(--green-500);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .forum-card {
+                min-height: auto;
+            }
+
+            .page-wrapper {
+                padding: 40px 20px 60px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .page-wrapper {
+                padding: 32px 16px 56px;
+            }
+
+            .contact-header {
+                margin-bottom: 40px;
+            }
+
+            .contact-card {
+                padding: 20px;
+            }
+
+            .forum-card {
+                padding: 28px 20px;
+            }
+
+            .forum-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 12px;
+            }
+
+            .forum-body {
+                padding: 32px 12px;
+            }
+
+            .forum-placeholder-icon {
+                width: 70px;
+                height: 70px;
+            }
+
+            .forum-placeholder-icon svg {
+                width: 36px;
+                height: 36px;
+            }
+
+            .forum-body h3 {
+                font-size: 18px;
+            }
+
+            .forum-body > p {
+                font-size: 15px;
+            }
+
+            .feature-tag {
+                font-size: 13px;
+                padding: 8px 14px;
+            }
+        }
+
+        /* Focus states for accessibility */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--green-500);
+            outline-offset: 2px;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header Section -->
+        <header class="contact-header">
+            <div class="header-badge" aria-label="Kategori halaman">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                <span>Hubungi Kami</span>
+            </div>
+            <h1>Ada Pertanyaan? Kami Siap Membantu</h1>
+            <p>Punya pertanyaan seputar fitur aplikasi Wellora, kemitraan, atau ingin berkonsultasi? Kirimkan pesan Anda kepada tim kami.</p>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="contact-grid">
+            <!-- Left Column: Contact Info Cards -->
+            <section class="contact-cards" aria-label="Informasi Kontak">
+                <!-- Email Card -->
+                <article class="contact-card">
+                    <div class="card-icon-wrapper" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">Email Resmi</div>
+                        <div class="card-value"><a href="mailto:support@wellora.id">support@wellora.id</a></div>
+                    </div>
+                </article>
+
+                <!-- Phone/WhatsApp Card -->
+                <article class="contact-card">
+                    <div class="card-icon-wrapper" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">Telepon / WhatsApp</div>
+                        <div class="card-value"><a href="tel:+6281234567890">+62 812-3456-7890</a></div>
+                    </div>
+                </article>
+
+                <!-- Address Card -->
+                <article class="contact-card">
+                    <div class="card-icon-wrapper" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">Alamat Kantor</div>
+                        <div class="card-value">Gedung Wellora Health Center, Jakarta Selatan, Indonesia</div>
+                    </div>
+                </article>
+
+                <!-- Hours Card -->
+                <article class="contact-card">
+                    <div class="card-icon-wrapper" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-label">Jam Layanan</div>
+                        <div class="card-value">Senin–Jumat, 08.00–17.00 WIB</div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Right Column: Forum Placeholder Card -->
+            <section class="forum-card" aria-labelledby="forum-title">
+                <div class="forum-header">
+                    <div class="forum-icon-wrapper" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.937 7.231a1 1 0 0 0-1.173-.319 20.966 20.966 0 0 1-6.166 0 1 1 0 0 0-1.172.318l-2.45 5.654a1 1 0 0 0 .287 1.327l3.274 1.583a1 1 0 0 1 .778 1.129l-.702 6.87a2.5 2.5 0 0 1-2.093 2.5H8.5a2.5 2.5 0 0 1-2.424-2l1.59-5.862a1 1 0 0 1 .816-.988l4.476-1.094a1 1 0 0 0 .837-.448l2.106-4.862Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 18a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" />
+                        </svg>
+                    </div>
+                    <div class="forum-title-block">
+                        <h2 id="forum-title">Forum Bantuan Wellora</h2>
+                        <p>Komunitas & Dukungan</p>
+                    </div>
+                </div>
+                <div class="forum-body">
+                    <div class="forum-placeholder-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.937 7.231a1 1 0 0 0-1.173-.319 20.966 20.966 0 0 1-6.166 0 1 1 0 0 0-1.172.318l-2.45 5.654a1 1 0 0 0 .287 1.327l3.274 1.583a1 1 0 0 1 .778 1.129l-.702 6.87a2.5 2.5 0 0 1-2.093 2.5H8.5a2.5 2.5 0 0 1-2.424-2l1.59-5.862a1 1 0 0 1 .816-.988l4.476-1.094a1 1 0 0 0 .837-.448l2.106-4.862Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14 18a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z" />
+                        </svg>
+                    </div>
+                    <h3>Ruang untuk Bertanya & Berbagi</h3>
+                    <p>Forum bantuan Wellora akan segera hadir. Tempat ini nantinya akan menjadi komunitas untuk bertanya, berbagi pengalaman, dan saling mendukung seputar kesehatan dan Wellora.</p>
+                    <div class="forum-features">
+                        <span class="feature-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                            </svg>
+                            Tanya Jawab
+                        </span>
+                        <span class="feature-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm0 0a5.971 5.971 0 0 0-1.767.313A5.994 5.994 0 0 0 12 15.75a5.995 5.995 0 0 0 4.767-8.683 5.97 5.97 0 0 0-1.767-.313Z" />
+                            </svg>
+                            Tips Kesehatan
+                        </span>
+                        <span class="feature-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.975" />
+                            </svg>
+                            Diskusi Umum
+                        </span>
+                        <span class="feature-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                            </svg>
+                            Verified Answers
+                        </span>
+                    </div>
+                    <div class="coming-soon-badge" aria-label="Fitur akan datang">
+                        <span>Forum akan segera hadir</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
