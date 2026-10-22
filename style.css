@@ -70,7 +70,7 @@ header {
   transition: transform 0.2s ease;
 }
 
-.hero {
+.hero, .about {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
@@ -78,6 +78,8 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
 .text-hero {
@@ -412,4 +414,104 @@ header {
   color: #2EAD70;
   font-weight: 600;
   line-height: 1.4;
+}
+
+/* about */
+
+
+.about{
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(18, 55, 42, 0.06);
+  border:  1px solid #E5E9E8;
+  padding: 50px 40px;
+}
+
+.about-kiri{
+
+}
+
+.about-title{
+  font-size: 36px;
+  color: #12372A;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.about-desc{
+  font-size: 15px;
+  color: #52606D;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.value-item{
+  display: flex;
+  gap: 16px;
+  background-color: #F8FCF9;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 1px solid #E5E9E8;
+  margin-bottom: 18px;
+}
+
+.value-icon{
+  border-radius: 12px;
+  font-size: 18px;
+  color: #2EAD70;
+  background-color: #E7F7EE;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-title{
+  font-weight: 700;
+  font-size: 15px;
+  color: #12372A;
+}
+
+.value-desc{
+  font-size: 13px;
+  color: #52606D;
+  line-height: 1.5;
+}
+
+.box-about-kanan{
+  background-color: #12372A;
+  color: white;
+  padding: ;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(18, 55, 42, 0.15);
+}
+
+.title-about-box{
+  font-size: 20px;
+  font-weight: 800;
+  color: #CBEFDB;
+}
+
+.card-about-kanan{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item{
+  background-color: #344841;
+  display: flex;
+  gap: 30px;
+  border-radius: 20px;
+}
+  
+.card-title{
+  font-size: 20px;
+  font-weight: 800;
+  color: #CBEFDB;
+}
+
+.about-kanan-desc{
+  
 }
