@@ -18,11 +18,11 @@
             </a>
         <!-- menu -->
         <nav class="nav-menu">
-        <a href="#" class="nav-item active"> Beranda </a>
-        <a href="#" class="nav-item"> Fitur </a>
-        <a href="#" class="nav-item"> Tentang Kami </a>
+        <a href="#beranda" class="nav-item active"> Beranda </a>
+        <a href="#feature" class="nav-item"> Fitur </a>
+        <a href="#tentang kami" class="nav-item"> Tentang Kami </a>
         <a href="#" class="nav-item"> Artikel </a>
-        <a href="#" class="nav-item"> Kontak </a>
+        <a href="#call" class="nav-item"> Kontak </a>
         </nav>
 
         <!-- tombol -->
@@ -34,7 +34,7 @@
     </header>
 
     <hero>
-        <section class="hero">
+        <section class="hero" id="beranda">
         <div class="text-hero">
             <span class="badge-hero">
                 <i class="fa-solid fa-heart"></i>
@@ -61,7 +61,7 @@
         </section>
     </hero>
     <!-- card 1 -->
-    <section class="features">
+    <section class="features" id="feature">
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">
@@ -171,7 +171,7 @@
       </div>
       </section>
       
-    <section class="about">
+    <section class="about" id="tentang kami">
       <div class="about-kiri">
         <span class="about-badge">
           <i class="fa-solid fa-leaf"></i> Tentang Wellora
@@ -245,7 +245,7 @@
       </div>
     </section>
 
-<section class="call">
+<section class="call" id="call">
   <div class="call-header">
     <span class="call-badge">
       <i class="fa-solid fa-headset"></i> Hubungi Kami
@@ -291,7 +291,6 @@
         </div>
       </div>
     </div>
-    <!-- .call-kiri DITUTUP di atas, sebelum .call-kanan -->
 
     <div class="call-kanan">
       <h3 class="call-form-title">Kirim Pesan Langsung</h3>
@@ -321,5 +320,34 @@
         <p>© 2026 Wellora. Seluruh hak cipta dilindungi. Dibuat untuk pembelajaran CSS Flexbox Siswa Kelas X RPL.</p>
       </div>
     </footer>
+
+    <button id="btnbacktop" class="btn-back-to-top" onclick="keAtasHalaman()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+      // setiap kali pengguna melakukan scroll , jalankan fungsi di dalamnya, fungsi ini akan dipanggil berulang ulang selama pengguna melakukan scroll
+      window.addEventListener('scroll',function() {
+
+        // getElementbyId : mengambil elemen html yang memiliki id btnBackToTop
+        const btnTop = document.getElementById('btnbacktop');
+
+        if (window.scrollY >300){
+          btnTop.style.display = 'block';
+        }
+        else{
+          btnTop.style.display = 'none'
+        }
+      })
+
+      function keAtasHalaman(){
+        window.scrollTo({
+          top: 0, behavior: 'smooth'
+          //bergulir halus ke bagian paling atas 
+        })
+      }
+    </script>
+
 </body>
 </html>
