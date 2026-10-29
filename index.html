@@ -22,7 +22,7 @@
         <a href="#beranda" class="nav-item active"> Beranda </a>
         <a href="#feature" class="nav-item"> Fitur </a>
         <a href="#tentang kami" class="nav-item"> Tentang Kami </a>
-        <a href="#" class="nav-item"> Artikel </a>
+        <a href="#artikel" class="nav-item"> Artikel </a>
         <a href="#call" class="nav-item"> Kontak </a>
         </nav>
 
@@ -246,6 +246,85 @@
       </div>
     </section>
 
+<!-- Artikel Section -->
+<section class="artikel" id="artikel">
+  <div class="artikel-header">
+    <span class="artikel-badge">
+      <i class="fa-solid fa-book-open"></i>
+      Edukasi & Inspirasi
+    </span>
+    <h2 class="artikel-judul">Artikel & Tips Gaya Hidup Sehat Terkini</h2>
+    <p class="artikel-deskripsi">
+      Perluas wawasan Anda seputar nutrisi, tips olahraga praktis, dan manajemen stres untuk menjaga vitalitas tubuh sepanjang hari.
+    </p>
+  </div>
+
+  <div class="artikel-grid">
+    <!-- Artikel 1 -->
+    <article class="artikel-card">
+      <div class="artikel-gambar">
+        <img src="assets/Sayur.jpeg" alt="Sayuran dan buah segar" />
+      </div>
+      <div class="artikel-konten">
+        <div class="artikel-meta">
+          <span class="artikel-kategori">Nutrisi</span>
+          <span class="artikel-waktu">5 menit baca</span>
+        </div>
+        <h3 class="artikel-title">5 Langkah Memulai Pola Makan Sehat Tanpa Diet Menyiksa</h3>
+        <p class="artikel-excerpt">
+          Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.
+        </p>
+        <a href="artikel1.html?id=0" class="artikel-link">
+          Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- Artikel 2 -->
+    <article class="artikel-card">
+      <div class="artikel-gambar">
+        <img src="assets/Naik Tangga.jpeg" alt="Orang berolahraga tangga" />
+      </div>
+      <div class="artikel-konten">
+        <div class="artikel-meta">
+          <span class="artikel-kategori">Kebugaran</span>
+          <span class="artikel-waktu">5 menit baca</span>
+        </div>
+        <h3 class="artikel-title">Berapa Banyak Langkah Kaki Yang Sebenarnya Dibutuhkan Tubuh?</h3>
+        <p class="artikel-excerpt">
+          Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.
+        </p>
+        <a href="#" class="artikel-link">
+          Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- Artikel 3 -->
+    <article class="artikel-card">
+      <div class="artikel-gambar">
+        <img src="assets/Tidur.jpeg" alt="Kucing tidur" />
+      </div>
+      <div class="artikel-konten">
+        <div class="artikel-meta">
+          <span class="artikel-kategori">Pola Tidur</span>
+          <span class="artikel-waktu">5 menit baca</span>
+        </div>
+        <h3 class="artikel-title">Rahasia Tidur Nyenyak Demi Produktivitas Maksimal</h3>
+        <p class="artikel-excerpt">
+          Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.
+        </p>
+        <a href="#" class="artikel-link">
+          Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+   </div>
+</section>
+
 <section class="call" id="call">
   <div class="call-header">
     <span class="call-badge">
@@ -338,7 +417,7 @@
           btnTop.style.display = 'block';
         }
         else{
-          btnTop.style.display = 'none'
+          btnTop.style.display = 'none';
         }
       })
 
@@ -346,7 +425,7 @@
         window.scrollTo({
           top: 0, behavior: 'smooth'
           //bergulir halus ke bagian paling atas 
-        })
+        }) 
       }
     </script>
 
