@@ -790,6 +790,8 @@ header {
   box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
   border: 1px solid #E8F5ED;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .artikel-card:hover {
@@ -817,6 +819,9 @@ header {
 
 .artikel-konten {
   padding: 28px;
+  display: flex;          
+  flex-direction: column; 
+  flex: 1;
 }
 
 .artikel-meta {
@@ -865,6 +870,7 @@ header {
   color: #2EAD70;
   text-decoration: none;
   transition: all 0.2s ease;
+  margin-top: auto;
 }
 
 .artikel-link:hover {
@@ -880,4 +886,3 @@ header {
 .artikel-link:hover i {
   transform: translateX(4px);
 }
-

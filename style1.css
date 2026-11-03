@@ -1,4 +1,8 @@
-/* Reset */
+/* ==========================================
+   STYLE-ARTIKEL.CSS  (CSS baru, berdiri sendiri)
+   ========================================== */
+
+/* ----- Reset & pengaturan dasar ----- */
 * {
   margin: 0;
   padding: 0;
@@ -9,244 +13,299 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8fcf9;
   color: #1f2933;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-
-.nav-logo {
-  font-size: 22px;
-  font-weight: 800;
-  color: #1f2933;
+a {
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.nav-item {
-  color: #1f2933;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.nav-item:hover,
-.nav-item.active {
-  color: #2ead70;
-  transition: color 0.2s ease;
-}
-
-.nav-button {
-  display: flex;
-  align-items: center;
-}
-
-.btn-unduh {
-  padding: 13px 24px;
-  border-radius: 25px;
-  background-color: #39bd7d;
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 14px;
-  box-shadow: 0 4px 12px rgba(46, 173, 112, 0.25);
-}
-
-.btn-unduh:hover {
-  background-color: #248c5a;
-  transform: translateY(-2px);
-  transition: transform 0.2s ease;
-}
-
-/* Artikel Page */
-.artikel-page {
+/* ----- Pembungkus utama ----- */
+.container {
   width: 90%;
   max-width: 800px;
-  margin: 0 auto 60px;
+  margin: 30px auto 70px auto;
 }
 
-/* Breadcrumb */
-.breadcrumb {
-  margin-bottom: 24px;
+/* ----- Tombol kembali ----- */
+.tombol-kembali {
+  display: inline-block;
+  background-color: white;
+  color: #2ead70;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(18, 55, 42, 0.08);
 }
 
-.breadcrumb-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: #2EAD70;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.breadcrumb-link:hover {
+.tombol-kembali:hover {
   color: #248c5a;
 }
 
-.breadcrumb-link i {
-  font-size: 12px;
-}
-
-/* Hero Image */
-.artikel-hero {
-  width: 100%;
+/* ----- Kotak artikel ----- */
+.kotak-artikel {
+  background-color: white;
   border-radius: 24px;
   overflow: hidden;
-  margin-bottom: 32px;
-  box-shadow: 0 8px 30px rgba(18, 55, 42, 0.1);
+  border: 1px solid #e8f5ed;
+  box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
 }
 
-.hero-img {
+.gambar-utama {
   width: 100%;
-  height: 420px;
+  height: 360px;
   object-fit: cover;
   display: block;
 }
 
-/* Artikel Content */
-.artikel-content {
-  background: white;
-  border-radius: 24px;
-  padding: 48px;
-  box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
-  border: 1px solid #E8F5ED;
+.isi {
+  padding: 40px;
 }
 
-/* Meta Info */
-.artikel-meta {
+/* ----- Info (badge, waktu, tanggal) ----- */
+.info {
   display: flex;
   align-items: center;
-  gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
-.kategori-badge {
-  padding: 6px 16px;
+.badge {
+  background-color: #e7f7ee;
+  color: #2ead70;
   font-size: 13px;
-  font-weight: 700;
-  color: #2EAD70;
-  background: #E7F7EE;
+  font-weight: bold;
+  padding: 6px 16px;
   border-radius: 100px;
 }
 
-.meta-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.info-item {
   font-size: 13px;
-  color: #8A9BA8;
   font-weight: 600;
+  color: #8a9ba8;
 }
 
-.meta-item i {
-  font-size: 12px;
-}
-
-/* Judul */
-.artikel-judul {
-  font-size: 36px;
+/* ----- Judul & teks ----- */
+.judul {
+  font-size: 32px;
   font-weight: 800;
-  color: #12372A;
+  color: #12372a;
   line-height: 1.3;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-/* Intro */
-.artikel-intro {
-  font-size: 16px;
-  color: #52606D;
+.pembuka {
+  font-size: 15px;
+  color: #52606d;
   line-height: 1.8;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E8F5ED;
+  border-bottom: 1px solid #e8f5ed;
 }
 
-/* Poin Artikel */
-.poin-artikel {
-  margin-bottom: 28px;
+.poin {
+  margin-bottom: 26px;
 }
 
-.poin-judul {
-  font-size: 20px;
+.poin h2 {
+  font-size: 19px;
   font-weight: 800;
-  color: #12372A;
-  margin-bottom: 12px;
-  line-height: 1.4;
+  color: #12372a;
+  margin-bottom: 10px;
 }
 
-.poin-artikel p {
+.poin p {
   font-size: 15px;
-  color: #52606D;
+  color: #52606d;
   line-height: 1.8;
 }
 
-/* Share Section */
-.share-section {
-  margin-top: 48px;
-  padding-top: 32px;
-  border-top: 1px solid #E8F5ED;
+/* ----- Bagikan artikel ----- */
+.bagikan {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 14px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #e8f5ed;
 }
 
-.share-label {
+.bagikan-teks {
+  font-size: 14px;
+  font-weight: bold;
+  color: #12372a;
+}
+
+.bagikan-teks i {
+  color: #2ead70;
+  margin-right: 6px;
+}
+
+.bagikan-ikon {
   display: flex;
-  align-items: center;
   gap: 10px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #12372A;
 }
 
-.share-label i {
-  color: #2EAD70;
-  font-size: 18px;
-}
-
-.share-buttons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.share-btn {
-  width: 44px;
-  height: 44px;
+.ikon {
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
+  background-color: #eef2f0;
+  color: #52606d;
+  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.ikon:hover {
+  background-color: #2ead70;
   color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.3s ease;
 }
 
-.share-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+/* ----- Artikel terkait ----- */
+.judul-terkait {
+  font-size: 22px;
+  font-weight: 800;
+  color: #12372a;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
-.share-btn.whatsapp {
-  background: #52606D;
+.daftar-terkait {
+  display: flex;
+  gap: 20px;
 }
 
-.share-btn.facebook {
-  background: #52606D;
+.kartu {
+  flex: 1;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e8f5ed;
+  box-shadow: 0 4px 20px rgba(18, 55, 42, 0.06);
 }
 
-.share-btn.twitter {
-  background: #52606D;
+.kartu:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.kartu img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.kartu-isi {
+  padding: 16px;
+}
+
+.kartu-info {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a9ba8;
+  margin-bottom: 8px;
+}
+
+.kartu-info i {
+  color: #2ead70;
+}
+
+.kartu h3 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #12372a;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.kartu-link {
+  font-size: 13px;
+  font-weight: bold;
+  color: #2ead70;
+}
+
+.kartu-link:hover {
+  color: #248c5a;
+}
+
+/* ----- Footer ----- */
+.footer {
+  background-color: #12372a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 30px 20px;
+}
+
+.footer-logo {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.footer-logo i {
+  color: #2ead70;
+  margin-right: 6px;
+}
+
+.footer-deskripsi {
+  color: #cbeddb;
+  font-size: 14px;
+  max-width: 480px;
+  margin: 0 auto 28px auto;
+  line-height: 1.7;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.footer-menu a {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer-menu a:hover {
+  color: #2ead70;
+}
+
+.footer-bawah {
+  border-top: 1px solid #294b3e;
+  padding-top: 20px;
+}
+
+.footer-bawah p {
+  color: #8fa89a;
+  font-size: 12px;
+}
+
+/* ----- Tampilan HP ----- */
+@media (max-width: 700px) {
+  .isi {
+    padding: 24px 20px;
+  }
+
+  .gambar-utama {
+    height: 220px;
+  }
+
+  .judul {
+    font-size: 24px;
+  }
+
+  .daftar-terkait {
+    flex-direction: column;
+  }
 }
