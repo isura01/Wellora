@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .daftar-kartu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .kartu {
+            border: 1px solid #ddd;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .kartu:hover{
+            background-color: #f5f5f5;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="daftar-kartu" id="daftar-kartu">
+
+    </main>
+
+    <template id="template">
+        <a class="kartu">
+            <h2 class="judul"></h2>
+            <p class="deskripsi"></p>
+        </a>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

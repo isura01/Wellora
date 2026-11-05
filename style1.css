@@ -106,6 +106,12 @@ a {
   border-bottom: 1px solid #e8f5ed;
 }
 
+.isi-berita {
+  font-size: 15px;
+  color: #52606d;
+  line-height: 1.8;
+}
+
 .poin {
   margin-bottom: 26px;
 }

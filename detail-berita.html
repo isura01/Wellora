@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Artikel - Wellora</title>
+    <link rel="shortcut icon" href="assets/logo wellora.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <script src="sc.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <a href="index.html#artikel" class="tombol-kembali">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Artikel
+        </a>
+
+        <article class="kotak-artikel" id="detail-berita" hidden>
+            <img src="" alt="" class="gambar-utama" id="gambar-berita" style="display: none;">
+
+            <div class="isi">
+                <div class="info" id="info-berita" style="display: none;">
+                    <span class="badge" id="kategori-berita"></span>
+                    <span class="info-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span id="waktu-berita"></span>
+                    </span>
+                    <span class="info-item">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span id="tanggal-berita"></span>
+                    </span>
+                </div>
+
+                <h1 class="judul" id="judul-berita"></h1>
+                <p class="pembuka" id="deskripsi-berita"></p>
+                <div class="isi-berita" id="isi-berita"></div>
+
+                <div class="bagikan">
+                    <div class="bagikan-teks">
+                        <i class="fa-solid fa-share-nodes"></i> Bagikan Artikel Ini
+                    </div>
+                    <div class="bagikan-ikon">
+                        <a href="#" class="ikon" aria-label="Bagikan ke WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="ikon" aria-label="Bagikan ke Telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="#" class="ikon" aria-label="Bagikan ke X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section id="bagian-terkait">
+            <h2 class="judul-terkait">Artikel Terkait Lainnya</h2>
+            <div class="daftar-terkait" id="artikel-terkait"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo"><i class="fa-solid fa-leaf"></i> Wellora</div>
+        <p class="footer-deskripsi">
+            Sahabat setia Anda menuju kehidupan yang lebih sehat, aktif, dan seimbang setiap hari.
+        </p>
+        <nav class="footer-menu">
+            <a href="index.html">Beranda</a>
+            <a href="index.html#feature">Fitur</a>
+            <a href="index.html#tentang kami">Tentang Kami</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="index.html#call">Kontak</a>
+        </nav>
+        <div class="footer-bawah">
+            <p>© 2026 Wellora. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

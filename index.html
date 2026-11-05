@@ -171,7 +171,8 @@
         </div>
       </div>
       </section>
-      
+
+      <!-- tentang kami -->
     <section class="about" id="tentang kami">
       <div class="about-kiri">
         <span class="about-badge">
@@ -259,72 +260,28 @@
     </p>
   </div>
 
-  <div class="artikel-grid">
-    <!-- Artikel 1 -->
+  <main class="artikel-grid" id="daftar-kartu"></main>
+  <template id="template">
     <article class="artikel-card">
       <div class="artikel-gambar">
-        <img src="assets/Sayur.jpeg" alt="Sayuran dan buah segar" />
+        <img src="" alt="">
       </div>
       <div class="artikel-konten">
         <div class="artikel-meta">
-          <span class="artikel-kategori">Nutrisi</span>
-          <span class="artikel-waktu">5 menit baca</span>
+          <span class="artikel-kategori"></span>
+          <span class="artikel-waktu"></span>
         </div>
-        <h3 class="artikel-title">5 Langkah Memulai Pola Makan Sehat Tanpa Diet Menyiksa</h3>
-        <p class="artikel-excerpt">
-          Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.
-        </p>
-        <a href="artikel1.html?id=0" class="artikel-link">
+        <h3 class="artikel-title"></h3>
+        <p class="artikel-excerpt"></p>
+        <a class="artikel-link" href="#">
           Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </article>
-
-    <!-- Artikel 2 -->
-    <article class="artikel-card">
-      <div class="artikel-gambar">
-        <img src="assets/Naik Tangga.jpeg" alt="Orang berolahraga tangga" />
-      </div>
-      <div class="artikel-konten">
-        <div class="artikel-meta">
-          <span class="artikel-kategori">Kebugaran</span>
-          <span class="artikel-waktu">5 menit baca</span>
-        </div>
-        <h3 class="artikel-title">Berapa Banyak Langkah Kaki Yang Sebenarnya Dibutuhkan Tubuh?</h3>
-        <p class="artikel-excerpt">
-          Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.
-        </p>
-        <a href="artikel2.html?id=1" class="artikel-link">
-          Baca Selengkapnya<i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-    </article>
-
-    <!-- Artikel 3 -->
-    <article class="artikel-card">
-      <div class="artikel-gambar">
-        <img src="assets/Tidur.jpeg" alt="Kucing tidur" />
-      </div>
-      <div class="artikel-konten">
-        <div class="artikel-meta">
-          <span class="artikel-kategori">Pola Tidur</span>
-          <span class="artikel-waktu">5 menit baca</span>
-        </div>
-        <h3 class="artikel-title">Rahasia Tidur Nyenyak Demi Produktivitas Maksimal</h3>
-        <p class="artikel-excerpt">
-          Pelajari cara menyeimbangkan porsi karbohidrat, protein, dan serat harian secara bertahap tanpa perlu rasa lapar berlebihan.
-        </p>
-        <a href="artikel3.html?id=2" class="artikel-link">
-          Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-    </article>
-  </div>
+  </template>
 </section>
 
-   </div>
-</section>
-
+<!-- call section -->
 <section class="call" id="call">
   <div class="call-header">
     <span class="call-badge">
@@ -378,6 +335,7 @@
 
   </div>
 </section>
+
 <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-logo">
@@ -406,6 +364,7 @@
     </button>
 
 
+    <script src="sc.js"></script>
     <script>
       // setiap kali pengguna melakukan scroll , jalankan fungsi di dalamnya, fungsi ini akan dipanggil berulang ulang selama pengguna melakukan scroll
       window.addEventListener('scroll',function() {
